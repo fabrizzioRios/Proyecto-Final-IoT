@@ -4,7 +4,6 @@ En este proyecto final, se busca la implementacion de un servidor o broker de MQ
 ### Requerimientos 📋
 - Python > 3.9.0 
 - Django > 4.1.5
-- Selenium 4.8.0
 
 ## Build
 ### Set up de Python
