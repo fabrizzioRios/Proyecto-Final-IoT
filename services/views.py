@@ -99,7 +99,7 @@ def signup(request):
             user.refresh_from_db()
             user.save()
             login(request, user)
-            subject = 'Bienvenido a la familia Bao Fu!\n'
+            subject = 'Bienvenido a la familia Bao Fu!'
             message = f'Hola {user.username} !, estamos contentos de tenerte con nosotros <a ' \
                       f'href="{local}">login<a>'
             email_from = settings.EMAIL_HOST_USER
