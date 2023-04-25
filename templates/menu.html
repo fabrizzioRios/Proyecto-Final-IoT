@@ -81,7 +81,7 @@
             {% for element in context %}
                 {% if element.value == '1' %}
                     <h3>You have published into this topic {element.topic}</h3>
-                {% if element.value == '2' %}
+                {% else %}
                     <h3>You are now suscribed to this topic {element.topic}</h3>
                 {% endif %}
             {% endfor %}>
