@@ -86,6 +86,8 @@ def supplier_register(request):
         form_supplier = SupplierForm(request.POST)
         form_supplier.save()
         return render(request, 'supplier.html', {'form': form_supplier})
+    if request.method == 'GET':
+        return render(request, 'supplier.html', {'form': form_supplier})
 
 
 def signup(request):
