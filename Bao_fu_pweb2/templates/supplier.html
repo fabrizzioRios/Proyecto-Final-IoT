@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="registroSUP">
+  <h2>Registro de Proveedores</h2>
+  <form method="POST" class="fRegSUP">
+    {% csrf_token %}
+    {{ form.as_p }}
+  <button href="{% url 'home' %}" type="submit" class="cta" id="btn">
+    <span>Registrar Proveedor</span>
+    <svg viewBox="0 0 13 10" height="10px" width="15px">
+      <path d="M1,5 L11,5"></path>
+      <polyline points="8 1 12 5 8 9"></polyline>
+    </svg>
+  </button>
+  </form>
+</div>
+{% endblock %}
